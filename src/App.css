@@ -1,38 +1,80 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-card {
+  width: 25%;
+  padding: 40px 40px 0 0;
+}
+
+.book-card img {
+  width: 100%;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 20%;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  padding-right: 10px;
+}
+
+li {
+  display: flex;
+}
+
+.books-page {
+  width: 80%;
+  padding: 50px;
+}
+.books-page-content {
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:focus {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.categories {
+  margin-bottom: 5px;
+}
+
+.nav-selection {
+  color: #909090;
+}
+
+.nav-selection:focus {
+  color: #333333;
 }
